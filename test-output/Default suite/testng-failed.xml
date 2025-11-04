@@ -6,7 +6,12 @@
       <class name="com.test.DummyTester">
         <methods>
           <include name="setupDriver"/>
-          <include name="navigateToEMICalculator"/>
+          <include name="test2"/>
+          <include name="reportCompletion"/>
+          <include name="reportTestCompletion"/>
+          <include name="reportGeneration"/>
+          <include name="reportTestCreation"/>
+          <include name="noInputTest"/>
           <include name="test"/>
         </methods>
       </class> <!-- com.test.DummyTester -->

@@ -8,8 +8,9 @@ import org.testng.annotations.Test;
 
 import com.pages.EMICalculatorNavigator;
 import com.setup.BaseSetup;
+import com.utils.ReportManager;
 
-public class DummyTester {
+public class DummyTester extends ReportManager {
 	
 	WebDriver driver;
 	EMICalculatorNavigator emiCalculator;
@@ -27,14 +28,17 @@ public class DummyTester {
 	@Test(dependsOnMethods = {"test"})
 	public void test2() {
 		emiCalculator.enterLoanDetails();
-	
+	}
+	@Test(dependsOnMethods = {"test","test2"})
+	public void noInputTest() {
+		emiCalculator.enterLoanDetailsNoInput();
 	}
 	
+//	@AfterClass
+//	public void testEnd() {
+//		BaseSetup.tearDown();
+//	}
 }
 
 	
-//	@AfterClass
-//	public void tearDown() {
-//	    BaseSetup.tearDown();
-//	}
 
