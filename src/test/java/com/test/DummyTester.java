@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.pages.EMICalculatorNavigator;
 import com.pages.LoanEligibilityCalculator;
 import com.setup.BaseSetup;
-import com.utils.ReportManager;
+import com.Utils2.ReportManager;
 
 public class DummyTester extends ReportManager {
 	
