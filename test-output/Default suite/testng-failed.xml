@@ -6,13 +6,12 @@
       <class name="com.test.DummyTester">
         <methods>
           <include name="setupDriver"/>
-          <include name="test2"/>
           <include name="reportCompletion"/>
-          <include name="reportTestCompletion"/>
           <include name="reportGeneration"/>
+          <include name="reportTestCompletion"/>
+          <include name="testEnd"/>
           <include name="reportTestCreation"/>
-          <include name="noInputTest"/>
-          <include name="test"/>
+          <include name="EligiblilityCalculatorTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.test.DummyTester -->
     </classes>

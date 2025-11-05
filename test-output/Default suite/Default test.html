@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 04 16:34:45 IST 2025</td>
+<td>Started on:</td><td>Wed Nov 05 17:28:33 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8349 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20002 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.DummyTester.noInputTest()'><b>noInputTest</b><br>Test class: com.test.DummyTester</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0);&quot; class=&quot;hl__calc--btn&quot; id=&quot;submitbuttonEmiCalid&quot; onclick=&quot;CALCULATORS.calculateEMIAction()&quot;&gt;...&lt;/a&gt; is not clickable at point (258, 552). Other element would receive the click: &lt;div class=&quot;hl__banner__title&quot;&gt;...&lt;/div&gt;
+<td title='com.test.DummyTester.EligiblilityCalculatorTest()'><b>EligiblilityCalculatorTest</b><br>Test class: com.test.DummyTester<br>Parameters: 50000, 0, 7.5, 15, 2800000, 27000</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0);&quot; class=&quot;hl__calc--btn&quot; id=&quot;submitbuttonEliCalid&quot; onclick=&quot;CALCULATORS.calculateEligibilityAction()&quot;&gt;...&lt;/a&gt; is not clickable at point (212, 558). Other element would receive the click: &lt;div class=&quot;hl__banner__flex&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=142.0.7444.59)
 Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77d677bfc4d412da5c88bcf900497d03, clickElement {id=f.73A08B4E948156FE5728D4DABFC22227.d.7E4C6D6306D704D1776F242806D0B75B.e.61}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50700}, goog:processID: 8416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50700/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (77d677bfc4d412da5c88bcf900497d03)] -&gt; id: submitbuttonEmiCalid]
-Session ID: 77d677bfc4d412da5c88bcf900497d03
+Command: [5dcf32b66b10f8b301cf8891d4acdc09, clickElement {id=f.E49C199007CE766A2605DAEF0AD6638E.d.936367B570A088B9C8D3F9EC826EDA9B.e.150}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57434}, goog:processID: 28228, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57434/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5dcf32b66b10f8b301cf8891d4acdc09)] -&gt; xpath: //a[@id=&apos;submitbuttonEliCalid&apos;]]
+Session ID: 5dcf32b66b10f8b301cf8891d4acdc09
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -101,9 +101,9 @@ Session ID: 77d677bfc4d412da5c88bcf900497d03
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at com.pages.EMICalculatorNavigator.enterLoanDetailsNoInput(EMICalculatorNavigator.java:77)
-	at com.test.DummyTester.noInputTest(DummyTester.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:53)
+	at com.test.DummyTester.EligiblilityCalculatorTest(DummyTester.java:53)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -130,16 +130,16 @@ Session ID: 77d677bfc4d412da5c88bcf900497d03
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace269458366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace269458366'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0);&quot; class=&quot;hl__calc--btn&quot; id=&quot;submitbuttonEmiCalid&quot; onclick=&quot;CALCULATORS.calculateEMIAction()&quot;&gt;...&lt;/a&gt; is not clickable at point (258, 552). Other element would receive the click: &lt;div class=&quot;hl__banner__title&quot;&gt;...&lt;/div&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1593245055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1593245055'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0);&quot; class=&quot;hl__calc--btn&quot; id=&quot;submitbuttonEliCalid&quot; onclick=&quot;CALCULATORS.calculateEligibilityAction()&quot;&gt;...&lt;/a&gt; is not clickable at point (212, 558). Other element would receive the click: &lt;div class=&quot;hl__banner__flex&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=142.0.7444.59)
 Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77d677bfc4d412da5c88bcf900497d03, clickElement {id=f.73A08B4E948156FE5728D4DABFC22227.d.7E4C6D6306D704D1776F242806D0B75B.e.61}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50700}, goog:processID: 8416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50700/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (77d677bfc4d412da5c88bcf900497d03)] -&gt; id: submitbuttonEmiCalid]
-Session ID: 77d677bfc4d412da5c88bcf900497d03
+Command: [5dcf32b66b10f8b301cf8891d4acdc09, clickElement {id=f.E49C199007CE766A2605DAEF0AD6638E.d.936367B570A088B9C8D3F9EC826EDA9B.e.150}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57434}, goog:processID: 28228, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57434/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5dcf32b66b10f8b301cf8891d4acdc09)] -&gt; xpath: //a[@id=&apos;submitbuttonEliCalid&apos;]]
+Session ID: 5dcf32b66b10f8b301cf8891d4acdc09
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -155,9 +155,9 @@ Session ID: 77d677bfc4d412da5c88bcf900497d03
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at com.pages.EMICalculatorNavigator.enterLoanDetailsNoInput(EMICalculatorNavigator.java:77)
-	at com.test.DummyTester.noInputTest(DummyTester.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:53)
+	at com.test.DummyTester.EligiblilityCalculatorTest(DummyTester.java:53)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -185,8 +185,8 @@ Session ID: 77d677bfc4d412da5c88bcf900497d03
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>1</td>
-<td>com.test.DummyTester@3c9754d8</td></tr>
+<td>4</td>
+<td>com.test.DummyTester@4b2bac3f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -197,15 +197,15 @@ Session ID: 77d677bfc4d412da5c88bcf900497d03
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.DummyTester.test2()'><b>test2</b><br>Test class: com.test.DummyTester</td>
+<td title='com.test.DummyTester.EligiblilityCalculatorTest()'><b>EligiblilityCalculatorTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000, 20000, 8.5, 20, 5609000, 56000</td>
 <td></td>
-<td>0</td>
-<td>com.test.DummyTester@3c9754d8</td></tr>
+<td>5</td>
+<td>com.test.DummyTester@4b2bac3f</td></tr>
 <tr>
-<td title='com.test.DummyTester.test()'><b>test</b><br>Test class: com.test.DummyTester</td>
+<td title='com.test.DummyTester.EligiblilityCalculatorTest()'><b>EligiblilityCalculatorTest</b><br>Test class: com.test.DummyTester<br>Parameters: 150000, 50000, 9, 25, 7500000, 72000</td>
 <td></td>
-<td>3</td>
-<td>com.test.DummyTester@3c9754d8</td></tr>
+<td>4</td>
+<td>com.test.DummyTester@4b2bac3f</td></tr>
 </table><p>
 </body>
 </html>
