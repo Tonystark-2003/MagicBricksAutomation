@@ -16,30 +16,19 @@ public class LoanEligibilityCalculator extends BasePage {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	// Input Fields
-	@FindBy(id = "incomePerMonthEliCal")
-	WebElement monthlyIncomeField;
-	@FindBy(id = "existingLoanEliCal")
-	WebElement existingLoanField;
-	@FindBy(id = "interestRateEliCal")
-	WebElement interestRateField;
-	@FindBy(xpath = "//label[@for='emiPropFinalizedNo']")
-	WebElement radioButtonLabel;
-	@FindBy(xpath = "//a[@id='submitbuttonEliCalid']")
-	WebElement calculateButton;
-	@FindBy(id = "loanAmtResultDiv")
-	WebElement eligibleLoanAmountResult;
-	@FindBy(xpath = "//li[@class='select__list--option' and text()='5 yrs']")
-	WebElement tenureyrs5;
-	@FindBy(xpath = "//li[@class='select__list--option' and text()='30 yrs']")
-	WebElement tenureyrs30;
+	@FindBy(id = "incomePerMonthEliCal") WebElement monthlyIncomeField;
+	@FindBy(id = "existingLoanEliCal") WebElement existingLoanField;
+	@FindBy(id = "interestRateEliCal") WebElement interestRateField;
+	@FindBy(xpath = "//label[@for='emiPropFinalizedNo']") WebElement radioButtonLabel;
+	@FindBy(xpath = "//a[@id='submitbuttonEliCalid']") WebElement calculateButton;
+	@FindBy(id = "loanAmtResultDiv") WebElement eligibleLoanAmountResult;
+	@FindBy(xpath = "//li[@class='select__list--option' and text()='5 yrs']") WebElement tenureyrs5;
+	@FindBy(xpath = "//li[@class='select__list--option' and text()='30 yrs']") WebElement tenureyrs30;
 
 	// Error Messages
-	@FindBy(xpath = "//span[@id='interestRateEliCalError']")
-	WebElement interestRateErrorMessage;
-	@FindBy(xpath = "//div[@class='hl__banner__close']")
-	WebElement bannerCloseButton;
-	@FindBy(xpath = "//span[@id='incomePerMonthEliCalError']")
-	WebElement monthlyIncomeErrorMessage;
+	@FindBy(xpath = "//span[@id='interestRateEliCalError']") WebElement interestRateErrorMessage;
+	@FindBy(xpath = "//div[@class='hl__banner__close']") WebElement bannerCloseButton;
+	@FindBy(xpath = "//span[@id='incomePerMonthEliCalError']") WebElement monthlyIncomeErrorMessage;
 
 	public LoanEligibilityCalculator(WebDriver driver) {
 		super(driver);
@@ -61,11 +50,8 @@ public class LoanEligibilityCalculator extends BasePage {
 		existingLoanField.sendKeys(Ongoing_EMI);
 		interestRateField.clear();
 		interestRateField.sendKeys(Interest_Rate);
-//		radioButtonLabel.click();
-		js.executeScript(
-				"document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
+		js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
 		if (bannerCloseButton.isDisplayed()) {
-//			bannerCloseButton.click();
 			js.executeScript(
 					"document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
 		}
@@ -77,35 +63,7 @@ public class LoanEligibilityCalculator extends BasePage {
 		st.assertAll();
 	}
 
-	public void enterEligibilityCalculatorDataWithNoData() {
-		monthlyIncomeField.clear();
-//		monthlyIncomeField.sendKeys();
-		existingLoanField.clear();
-//		existingLoanField.sendKeys("20000");
-		interestRateField.clear();
-//		interestRateField.sendKeys("10.5");
-//		radioButtonLabel.click();
-		js.executeScript(
-				"document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
-		calculateButton.click();
-
-		waitUntilWebElementIsVisible(monthlyIncomeErrorMessage);
-		try {
-			st.assertEquals(monthlyIncomeErrorMessage.getText(),
-					PropertyReader.readProperty("MonthlyIncomeErrorMessage"), "Monthly Income Error Message Validaton");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		waitUntilWebElementIsVisible(interestRateErrorMessage);
-		try {
-			st.assertEquals(interestRateErrorMessage.getText(), PropertyReader.readProperty("interestRateEliCalError"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-	}
-
+	
 	public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
 		
 		String tenure = Loan_Tenure;
@@ -130,17 +88,13 @@ public class LoanEligibilityCalculator extends BasePage {
 		System.out.println(tenure);
 
 		waitUntilWebElementIsVisible(monthlyIncomeErrorMessage);
+		waitUntilWebElementIsVisible(interestRateErrorMessage);
 			try {
-				st.assertEquals(monthlyIncomeErrorMessage.getText(),
-						PropertyReader.readProperty("MonthlyIncomeErrorMessage"), "Monthly Income Error Message Validaton");
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			waitUntilWebElementIsVisible(interestRateErrorMessage);
-			try {
+				st.assertEquals(monthlyIncomeErrorMessage.getText(),PropertyReader.readProperty("MonthlyIncomeErrorMessage"), "Monthly Income Error Message Validaton");
 				st.assertEquals(interestRateErrorMessage.getText(), PropertyReader.readProperty("interestRateEliCalError"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			
 	}
 }
