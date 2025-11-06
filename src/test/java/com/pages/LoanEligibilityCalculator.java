@@ -28,9 +28,9 @@ public class LoanEligibilityCalculator extends BasePage {
 	WebElement calculateButton;
 	@FindBy(id = "loanAmtResultDiv")
 	WebElement eligibleLoanAmountResult;
-	@FindBy(xpath = "//li[@class='select__list--option' and text()='5 yrs']") 
+	@FindBy(xpath = "//li[@class='select__list--option' and text()='5 yrs']")
 	WebElement tenureyrs5;
-	@FindBy(xpath = "//li[@class='select__list--option' and text()='30 yrs']") 
+	@FindBy(xpath = "//li[@class='select__list--option' and text()='30 yrs']")
 	WebElement tenureyrs30;
 
 	// Error Messages
@@ -40,7 +40,6 @@ public class LoanEligibilityCalculator extends BasePage {
 	WebElement bannerCloseButton;
 	@FindBy(xpath = "//span[@id='incomePerMonthEliCalError']")
 	WebElement monthlyIncomeErrorMessage;
-	
 
 	public LoanEligibilityCalculator(WebDriver driver) {
 		super(driver);
@@ -54,8 +53,8 @@ public class LoanEligibilityCalculator extends BasePage {
 		}
 	}
 
-	public void enterEligibilityCalculatorData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate,
-			String Loan_Tenure, String Eligible_Amount, String Monthly_EMI) {
+	public void enterEligibilityCalculatorData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure, String Eligible_Amount, String Monthly_EMI) {
+		
 		monthlyIncomeField.clear();
 		monthlyIncomeField.sendKeys(Monthly_Income);
 		existingLoanField.clear();
@@ -70,7 +69,7 @@ public class LoanEligibilityCalculator extends BasePage {
 			js.executeScript(
 					"document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
 		}
-				
+
 		calculateButton.click();
 		waitUntilWebElementIsClickable(eligibleLoanAmountResult);
 
@@ -107,8 +106,8 @@ public class LoanEligibilityCalculator extends BasePage {
 
 	}
 
-	public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI,
-			String Interest_Rate, String Loan_Tenure) {
+	public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
+		
 		String tenure = Loan_Tenure;
 		monthlyIncomeField.clear();
 		monthlyIncomeField.sendKeys(Monthly_Income);
@@ -117,29 +116,31 @@ public class LoanEligibilityCalculator extends BasePage {
 		interestRateField.clear();
 		interestRateField.sendKeys(Interest_Rate);
 //		radioButtonLabel.click();
-		js.executeScript(
-				"document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
-		calculateButton.click();
-		System.out.println(tenure);
-		
-		if(tenure == "5") {
+
+		if (tenure == "5") {
 			tenureyrs5.click();
-		}else if(tenure == "30") {
+		} else if (tenure == "30") {
 			tenureyrs30.click();
 		}
 
+		js.executeScript(
+				"document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
+		calculateButton.click();
+
+		System.out.println(tenure);
+
 		waitUntilWebElementIsVisible(monthlyIncomeErrorMessage);
-		try {
-			st.assertEquals(monthlyIncomeErrorMessage.getText(),
-					PropertyReader.readProperty("MonthlyIncomeErrorMessage"), "Monthly Income Error Message Validaton");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		waitUntilWebElementIsVisible(interestRateErrorMessage);
-		try {
-			st.assertEquals(interestRateErrorMessage.getText(), PropertyReader.readProperty("interestRateEliCalError"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+			try {
+				st.assertEquals(monthlyIncomeErrorMessage.getText(),
+						PropertyReader.readProperty("MonthlyIncomeErrorMessage"), "Monthly Income Error Message Validaton");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			waitUntilWebElementIsVisible(interestRateErrorMessage);
+			try {
+				st.assertEquals(interestRateErrorMessage.getText(), PropertyReader.readProperty("interestRateEliCalError"));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 	}
 }

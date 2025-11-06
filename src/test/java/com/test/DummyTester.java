@@ -65,13 +65,12 @@ public class DummyTester extends ReportManager {
 //	@Test(dataProvider = "LoanEligibiltyDataNegative", dataProviderClass = com.DataProvider.TestDataProvider.class, dependsOnMethods = {"ValidateErrForNoInputs", "EligiblilityCalculationTest"})
 	@Test(dataProvider = "LoanEligibiltyDataNegative", dataProviderClass = com.DataProvider.TestDataProvider.class)
 	public void EligibilityErrTest(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
-		eligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(Monthly_Income,Ongoing_EMI,Interest_Rate, Loan_Tenure);
+		eligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(Monthly_Income, Ongoing_EMI, Interest_Rate, Loan_Tenure);
 	}
 	
 	@AfterClass
 	public void testEnd() {
-		BaseSetup.tearDown();
-		
+		BaseSetup.tearDown();		
 	}
 }
 

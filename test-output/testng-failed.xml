@@ -7,7 +7,7 @@
         <methods>
           <include name="setupDriver"/>
           <include name="reportTestCreation"/>
-          <include name="EligibilityErrTest"/>
+          <include name="EligibilityErrTest" invocation-numbers="0 1 2 3"/>
           <include name="OpenEMICalculator"/>
           <include name="EligiblilityCalculationTest" invocation-numbers="0 1 2 3"/>
           <include name="ValidateCalculations"/>
