@@ -25,6 +25,7 @@ public class EMICalculatorNavigator extends BasePage {
 	@FindBy(xpath = "//span[@id = 'perMonthEmi']") WebElement elegibleAmmount;
 	@FindBy(id = "amountRequiredEmiCalError") WebElement amtErrMessage;
 	@FindBy(id = "interestRateEmiCalError") WebElement interestErrMessage;
+	@FindBy(xpath = "//div[@class='hl__banner__close']") WebElement bannerCloseButton;
 	
 	public EMICalculatorNavigator(WebDriver driver) {
 		super(driver);
@@ -45,13 +46,14 @@ public class EMICalculatorNavigator extends BasePage {
 		interestRateField.clear();
 		interestRateField.sendKeys("7.5");	
 //		radioButtonLabel.click();
-		js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section.emi-calc > div > div.hl__calc__row > div.hl__calc__lf > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n"
-				+ "");
+		js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section.emi-calc > div > div.hl__calc__row > div.hl__calc__lf > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
+		if(bannerCloseButton.isDisplayed()) {
+			js.executeScript("document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
+		}
 		calculateButton.click();
 		String Ammount  = elegibleAmmount.getText();
 		System.out.println(Ammount);
 		st.assertEquals(Ammount, "34,961", "Valid test example");
-		st.assertAll();
 	}
 	
 	public void enterLoanDetailsInvalid() {
@@ -63,9 +65,12 @@ public class EMICalculatorNavigator extends BasePage {
 				+ "");*/
 		waitUntilWebElementIsClickable(calculateButton);
 //		radioButtonLabel.click();
+		if(bannerCloseButton.isDisplayed()) {
+			js.executeScript("document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
+		}
 		calculateButton.click();
 		waitUntilWebElementIsVisible(interestErrMessage);
-		st.assertEquals(interestErrMessage.getText()," Min interest starts from 0%","Error Message validation");
+		st.assertEquals(interestErrMessage.getText(),"Min interest starts from 0%","Error Message validation");
 		
 	}	
 	
@@ -73,12 +78,17 @@ public class EMICalculatorNavigator extends BasePage {
 		loanAmountField.clear();
 //		loanAmountField.sendKeys();
 		interestRateField.clear();
-/*		interestRateField.sendKeys();
-		/*js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section.emi-calc > div > div.hl__calc__row > div.hl__calc__lf > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n"
-				+ "");*/
+//		interestRateField.sendKeys();		
+		if(bannerCloseButton.isDisplayed()) {
+			js.executeScript("document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
+		}
 		waitUntilWebElementIsClickable(calculateButton);
 		calculateButton.click();
 		waitUntilWebElementIsVisible(amtErrMessage);
 		st.assertEquals(amtErrMessage.getText(),"LoanAmount should lie between 1,00,000 and 10,00,00,000","Error Message validation");
+//		driver.close();
+//		waitUntilWebElementIsVisible(interestErrMessage);
+//		st.assertEquals(interestErrMessage.getText()," Min interest starts from 0%","Error Message validation");
+		st.assertAll();
 	}	
 }

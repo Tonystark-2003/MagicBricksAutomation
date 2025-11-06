@@ -60,7 +60,7 @@ public class ReportManager extends BaseSetup {
             extent.setSystemInfo("Operating System", System.getProperty("os.name"));
             extent.setSystemInfo("OS Version", System.getProperty("os.version"));
             extent.setSystemInfo("Java Version", System.getProperty("java.version"));
-            extent.setSystemInfo("Browser", "Chrome");
+            extent.setSystemInfo("Browser", System.clearProperty("browser.name"));
             extent.setSystemInfo("Environment", "QA");
             extent.setSystemInfo("Tester Name", "Shubham Pedhe");
             extent.setSystemInfo("User", System.getProperty("user.name"));

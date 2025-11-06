@@ -17,6 +17,9 @@ public class DummyTester extends ReportManager {
 	
 	WebDriver driver;
 	EMICalculatorNavigator emiCalculator;
+	LoanEligibilityCalculator eligibilityCalculator;
+	
+	
 	@BeforeClass
 	public void setupDriver() {
 		driver = BaseSetup.chromeDriverSetup();
@@ -25,39 +28,50 @@ public class DummyTester extends ReportManager {
 		System.out.println(((RemoteWebDriver) driver).getCapabilities().getBrowserName());
 	}
 	
-	@Test(enabled = false)
-	public void test() throws IOException {
+	/*---------------------------------Test Case 1----------------------------------------------------
+	 * created By : Shubham Pedhe
+	 * Reviewed By : Akasha KC
+	 * Motive : Open browser and open EMI CalCulator page
+	 * */
+	
+	@Test(priority = 0)
+	public void OpenEMICalculator() throws IOException {
 		emiCalculator=new EMICalculatorNavigator(driver);
 		emiCalculator.openUrl();
 		}
 	
-	@Test(enabled = false)
-	public void test2() {
+	@Test (dependsOnMethods = {"OpenEMICalculator"})
+	public void ValidateCalculations() {
 		emiCalculator.enterLoanDetails();
 	}
 	
-	@Test(enabled = false)
-	public void enterLoanDetailsInvalid() {
+	@Test(dependsOnMethods = {"OpenEMICalculator","ValidateCalculations"})
+	public void ValidateErrorMessage() {
+		emiCalculator.enterLoanDetailsInvalid();
+	}
+	
+	@Test (dependsOnMethods = {"OpenEMICalculator","ValidateCalculations","ValidateErrorMessage"})
+	public void ValidateErrForNoInputs() {
 		emiCalculator.enterLoanDetailsNoInput();
 	}
 	
-	@Test (enabled = false)
-	public void noInputTest() {
-		emiCalculator.enterLoanDetailsNoInput();
-	}
-	
-	@Test(dataProvider = "LoanEligibiltyData", dataProviderClass = com.DataProvider.TestDataProvider.class)
-	public void EligiblilityCalculatorTest(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure, String Eligible_Amount, String Monthly_EMI ) throws IOException {
-		LoanEligibilityCalculator eligibilityCalculator = new LoanEligibilityCalculator(driver);
+	@Test(dataProvider = "LoanEligibiltyDataPositive", dataProviderClass = com.DataProvider.TestDataProvider.class, dependsOnMethods = {"ValidateErrForNoInputs"})
+	public void EligiblilityCalculationTest(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure, String Eligible_Amount, String Monthly_EMI ) throws IOException {
+		eligibilityCalculator = new LoanEligibilityCalculator(driver);
 		eligibilityCalculator.openUrl();
-		eligibilityCalculator.enterEligibilityCalculatorData(Monthly_Income,Ongoing_EMI,Interest_Rate,	Loan_Tenure,	Eligible_Amount,	Monthly_EMI );
-//		eligibilityCalculator.enterEligibilityCalculatorDataWithNoData();
-//		eligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData();
+		eligibilityCalculator.enterEligibilityCalculatorData(Monthly_Income,Ongoing_EMI,Interest_Rate, Loan_Tenure, Eligible_Amount, Monthly_EMI );
+	}
+	
+//	@Test(dataProvider = "LoanEligibiltyDataNegative", dataProviderClass = com.DataProvider.TestDataProvider.class, dependsOnMethods = {"ValidateErrForNoInputs", "EligiblilityCalculationTest"})
+	@Test(dataProvider = "LoanEligibiltyDataNegative", dataProviderClass = com.DataProvider.TestDataProvider.class)
+	public void EligibilityErrTest(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
+		eligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(Monthly_Income,Ongoing_EMI,Interest_Rate, Loan_Tenure);
 	}
 	
 	@AfterClass
 	public void testEnd() {
 		BaseSetup.tearDown();
+		
 	}
 }
 

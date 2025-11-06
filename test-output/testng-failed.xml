@@ -6,12 +6,17 @@
       <class name="com.test.DummyTester">
         <methods>
           <include name="setupDriver"/>
+          <include name="reportTestCreation"/>
+          <include name="EligibilityErrTest"/>
+          <include name="OpenEMICalculator"/>
+          <include name="EligiblilityCalculationTest" invocation-numbers="0 1 2 3"/>
+          <include name="ValidateCalculations"/>
+          <include name="testEnd"/>
           <include name="reportCompletion"/>
+          <include name="ValidateErrorMessage"/>
           <include name="reportGeneration"/>
           <include name="reportTestCompletion"/>
-          <include name="testEnd"/>
-          <include name="reportTestCreation"/>
-          <include name="EligiblilityCalculatorTest" invocation-numbers="1"/>
+          <include name="ValidateErrForNoInputs"/>
         </methods>
       </class> <!-- com.test.DummyTester -->
     </classes>
