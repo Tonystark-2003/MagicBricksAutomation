@@ -2,13 +2,19 @@ package com.pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.asserts.SoftAssert;
 
 import com.parameter.PropertyReader;
 
 public class BalanceTransfer extends BasePage{
+
+    SoftAssert st = new SoftAssert();
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+
 
 	//Input Elements
     @FindBy(xpath = "(//input[@id='laltc' and @class = 'inputAdvFinance'])") WebElement loanAmountField;
@@ -18,7 +24,7 @@ public class BalanceTransfer extends BasePage{
     @FindBy(xpath = "(//input[@id='pfltc' and @class = 'inputAdvFinance'])") WebElement processinfFeeField;
     @FindBy(xpath = "(//input[@id='nltltc' and @class = 'inputAdvFinance'])") WebElement newTenureField;
     @FindBy(xpath = "(//input[@id='nrltc' and @class = 'inputAdvFinance'])") WebElement newRoIField;
-    
+    @FindBy(xpath = "//input[@value='Compare']") WebElement compareButton;
     
     //Output Elements
     @FindBy(id="messageAmountDiv") WebElement savedInterest;
@@ -45,22 +51,30 @@ public class BalanceTransfer extends BasePage{
 		}
 	}
     
-    public void BTCalculationTest() {
-    	loanAmountField.clear();
-    	loanAmountField.sendKeys();
+    public void BTCalculationTest(String Loan_Amount, String Tenure_Current, String Rate_of_Interest_Current, String Installments_Paid, String Processing_Fees, String Tenure_New, String Rate_of_Interest_New, String Saved_Interest, String Outstanding_Principal, String New_EMI
+ ) {
+    	
+        loanAmountField.clear();
+    	loanAmountField.sendKeys(Loan_Amount);
     	RoIField.clear();
-    	RoIField.sendKeys();
+    	RoIField.sendKeys(Rate_of_Interest_Current);
     	tenureField.clear();
-    	tenureField.sendKeys();
+    	tenureField.sendKeys(Tenure_Current);
+        paidEMIField.clear();
+    	paidEMIField.sendKeys(Installments_Paid);
     	processinfFeeField.clear();
-    	processinfFeeField.sendKeys();
+    	processinfFeeField.sendKeys(Processing_Fees);
     	newTenureField.clear();
-    	newTenureField.sendKeys();
+    	newTenureField.sendKeys(Tenure_New);
     	newRoIField.clear();
-    	newRoIField.sendKeys();
-    	
-    	
-    	
+    	newRoIField.sendKeys(Rate_of_Interest_New);
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", compareButton);
+        compareButton.click();
+        waitUntilTextChanges(savedInterest, driver);
+        st.assertEquals(savedInterest.getText().trim(), Saved_Interest, "Saved Interest does not match");
+        st.assertEquals(emiField.getText().trim(), New_EMI, "New EMI does not match");
+        st.assertAll();  	
+            	
     }
     
     

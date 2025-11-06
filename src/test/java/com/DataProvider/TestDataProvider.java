@@ -15,4 +15,9 @@ public class TestDataProvider {
 	public static Object[][] getLoanEligibiltyDataNegative(){
 		return ExcelReader.getTestData("LoanEligibiltyDataNegative");
 	}
+
+	@DataProvider(name="BalTransferPositiveData")
+    public static Object[][] getBalTransferPositiveData(){
+		return ExcelReader.getTestData("BalTransferPositiveData");
+    }
 }
