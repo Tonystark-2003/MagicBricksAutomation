@@ -33,7 +33,7 @@ public class DummyTester extends ReportManager {
 	/*---------------------------------Test Case 1----------------------------------------------------
 	 * created By : Shubham Pedhe
 	 * Reviewed By : Akasha KC
-	 * Motive : Open browser and open EMI CalCulator page
+	 * Motive : Open browser and open EMI Calculator page
 	 * */
 	
 	@Test(priority = 0)

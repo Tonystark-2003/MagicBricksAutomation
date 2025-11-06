@@ -1,14 +1,12 @@
 package com.pages;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Objects;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.asserts.SoftAssert;
 
 import com.parameter.PropertyReader;
@@ -54,22 +52,26 @@ public class LoanEligibilityCalculator extends BasePage {
 		existingLoanField.sendKeys(Ongoing_EMI);
 		interestRateField.clear();
 		interestRateField.sendKeys(Interest_Rate);
+		
 		js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
-        if (Objects.equals(Loan_Tenure, "5")) {
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", calculateButton);
+
+		
+		if (Objects.equals(Loan_Tenure, "5")) {
             tenureDropDown.click();
             tenureyrs5.click();
         } else if (Objects.equals(Loan_Tenure, "30")) {
             tenureDropDown.click();
             tenureyrs30.click();
         }
-		if (bannerCloseButton.isDisplayed()) {
-			js.executeScript(
-					"document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
-		}
+		// if (bannerCloseButton.isDisplayed()) {
+		// 	js.executeScript(
+		// 			"document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
+		// }
 
 		calculateButton.click();
-        waitUntilTextChanges(eligibleLoanAmountResult, driver);
 		waitUntilWebElementIsVisible(eligibleLoanAmountResult);
+//        waitUntilTextChanges(eligibleLoanAmountResult, driver);
 
 		st.assertEquals(eligibleLoanAmountResult.getText(), Eligible_Amount, "Eligible Loan Amount Validation");
 		st.assertAll();
@@ -91,8 +93,9 @@ public class LoanEligibilityCalculator extends BasePage {
 		} else if (Objects.equals(Loan_Tenure, "30")) {
 			tenureyrs30.click();
 		}
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", calculateButton);
 
-		js.executeScript(
+        js.executeScript(
 				"document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
 		calculateButton.click();
 

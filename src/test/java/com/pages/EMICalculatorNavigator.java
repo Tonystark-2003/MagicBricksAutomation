@@ -64,7 +64,7 @@ public class EMICalculatorNavigator extends BasePage {
 /*		js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section.emi-calc > div > div.hl__calc__row > div.hl__calc__lf > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n"
 				+ "");*/
 		waitUntilWebElementIsClickable(calculateButton);
-//		radioButtonLabel.click();
+
 		if(bannerCloseButton.isDisplayed()) {
 			js.executeScript("document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
 		}

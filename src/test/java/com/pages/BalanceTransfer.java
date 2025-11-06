@@ -70,9 +70,9 @@ public class BalanceTransfer extends BasePage{
     	newRoIField.sendKeys(Rate_of_Interest_New);
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", compareButton);
         compareButton.click();
-        waitUntilTextChanges(savedInterest, driver);
-        st.assertEquals(savedInterest.getText().trim(), Saved_Interest, "Saved Interest does not match");
-        st.assertEquals(emiField.getText().trim(), New_EMI, "New EMI does not match");
+//        waitUntilTextChanges(savedInterest, driver);
+        st.assertEquals(savedInterest.getText().replaceAll(",","").trim(), Saved_Interest, "Saved Interest does not match");
+        st.assertEquals(emiField.getText().replaceAll(",","").trim(), New_EMI, "New EMI does not match");
         st.assertAll();  	
             	
     }
