@@ -31,4 +31,11 @@ public class BasePage {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+    public void waitUntilTextChanges(WebElement element, WebDriver driver) {
+        String oldText = element.getText().trim();
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(d -> {
+            String newText = element.getText().trim();
+            return !newText.equals(oldText) && !newText.isEmpty();
+        });
+    }
 }

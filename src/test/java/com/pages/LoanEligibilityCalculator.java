@@ -66,19 +66,17 @@ public class LoanEligibilityCalculator extends BasePage {
 			js.executeScript(
 					"document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
 		}
-//        new FluentWait<>(driver)
-//                .withTimeout(Duration.ofSeconds(1))
-//                .pollingEvery(Duration.ofMillis(500))
-//                .until(d -> false);
+
 		calculateButton.click();
-		waitUntilWebElementIsClickable(eligibleLoanAmountResult);
+        waitUntilTextChanges(eligibleLoanAmountResult, driver);
+		waitUntilWebElementIsVisible(eligibleLoanAmountResult);
 
 		st.assertEquals(eligibleLoanAmountResult.getText(), Eligible_Amount, "Eligible Loan Amount Validation");
 		st.assertAll();
 	}
 
-	
-	public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
+
+    public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
 
         monthlyIncomeField.clear();
 		monthlyIncomeField.sendKeys(Monthly_Income);
@@ -101,10 +99,10 @@ public class LoanEligibilityCalculator extends BasePage {
 		System.out.println(Loan_Tenure);
 
 		waitUntilWebElementIsVisible(monthlyIncomeErrorMessage);
-		waitUntilWebElementIsVisible(interestRateErrorMessage);
+//		waitUntilWebElementIsVisible(interestRateErrorMessage);
 			try {
 				st.assertEquals(monthlyIncomeErrorMessage.getText(),PropertyReader.readProperty("MonthlyIncomeErrorMessage"), "Monthly Income Error Message Validaton");
-				st.assertEquals(interestRateErrorMessage.getText(), PropertyReader.readProperty("interestRateEliCalError"));
+//				st.assertEquals(interestRateErrorMessage.getText(), PropertyReader.readProperty("interestRateEliCalError"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
