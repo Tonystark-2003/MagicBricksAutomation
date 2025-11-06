@@ -1,11 +1,14 @@
 package com.pages;
 
 import java.io.IOException;
+import java.time.Duration;
+import java.util.Objects;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.asserts.SoftAssert;
 
 import com.parameter.PropertyReader;
@@ -22,6 +25,7 @@ public class LoanEligibilityCalculator extends BasePage {
 	@FindBy(xpath = "//label[@for='emiPropFinalizedNo']") WebElement radioButtonLabel;
 	@FindBy(xpath = "//a[@id='submitbuttonEliCalid']") WebElement calculateButton;
 	@FindBy(id = "loanAmtResultDiv") WebElement eligibleLoanAmountResult;
+    @FindBy(xpath = "//div[@class='hl__calc__form__input-row select']") WebElement tenureDropDown;
 	@FindBy(xpath = "//li[@class='select__list--option' and text()='5 yrs']") WebElement tenureyrs5;
 	@FindBy(xpath = "//li[@class='select__list--option' and text()='30 yrs']") WebElement tenureyrs30;
 
@@ -51,11 +55,21 @@ public class LoanEligibilityCalculator extends BasePage {
 		interestRateField.clear();
 		interestRateField.sendKeys(Interest_Rate);
 		js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
+        if (Objects.equals(Loan_Tenure, "5")) {
+            tenureDropDown.click();
+            tenureyrs5.click();
+        } else if (Objects.equals(Loan_Tenure, "30")) {
+            tenureDropDown.click();
+            tenureyrs30.click();
+        }
 		if (bannerCloseButton.isDisplayed()) {
 			js.executeScript(
 					"document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
 		}
-
+//        new FluentWait<>(driver)
+//                .withTimeout(Duration.ofSeconds(1))
+//                .pollingEvery(Duration.ofMillis(500))
+//                .until(d -> false);
 		calculateButton.click();
 		waitUntilWebElementIsClickable(eligibleLoanAmountResult);
 
@@ -65,9 +79,8 @@ public class LoanEligibilityCalculator extends BasePage {
 
 	
 	public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
-		
-		String tenure = Loan_Tenure;
-		monthlyIncomeField.clear();
+
+        monthlyIncomeField.clear();
 		monthlyIncomeField.sendKeys(Monthly_Income);
 		existingLoanField.clear();
 		existingLoanField.sendKeys(Ongoing_EMI);
@@ -75,9 +88,9 @@ public class LoanEligibilityCalculator extends BasePage {
 		interestRateField.sendKeys(Interest_Rate);
 //		radioButtonLabel.click();
 
-		if (tenure == "5") {
+		if (Objects.equals(Loan_Tenure, "5")) {
 			tenureyrs5.click();
-		} else if (tenure == "30") {
+		} else if (Objects.equals(Loan_Tenure, "30")) {
 			tenureyrs30.click();
 		}
 
@@ -85,7 +98,7 @@ public class LoanEligibilityCalculator extends BasePage {
 				"document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
 		calculateButton.click();
 
-		System.out.println(tenure);
+		System.out.println(Loan_Tenure);
 
 		waitUntilWebElementIsVisible(monthlyIncomeErrorMessage);
 		waitUntilWebElementIsVisible(interestRateErrorMessage);
