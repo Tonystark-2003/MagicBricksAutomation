@@ -29,7 +29,7 @@ public class LoanEligibilityCalculator extends BasePage {
 
 	// Error Messages
 	@FindBy(xpath = "//span[@id='interestRateEliCalError']") WebElement interestRateErrorMessage;
-	@FindBy(xpath = "//div[@class='hl__banner__close']") WebElement bannerCloseButton;
+	@FindBy(css = "#compare-offers-bottom-banner > div.hl__banner__close") WebElement bannerCloseButton;
 	@FindBy(xpath = "//span[@id='incomePerMonthEliCalError']") WebElement monthlyIncomeErrorMessage;
 
 	public LoanEligibilityCalculator(WebDriver driver) {
@@ -42,9 +42,13 @@ public class LoanEligibilityCalculator extends BasePage {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+//		driver.findElement(By.tagName())
+		js.executeScript("document.body.style.zoom = '0.5'");
+
 	}
 
-	public void enterEligibilityCalculatorData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure, String Eligible_Amount, String Monthly_EMI) {
+	public void enterEligibilityCalculatorData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure, String Eligible_Amount, String Monthly_EMI) throws InterruptedException {
+		
 		
 		monthlyIncomeField.clear();
 		monthlyIncomeField.sendKeys(Monthly_Income);
@@ -54,8 +58,6 @@ public class LoanEligibilityCalculator extends BasePage {
 		interestRateField.sendKeys(Interest_Rate);
 		
 		js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
-        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", calculateButton);
-
 		
 		if (Objects.equals(Loan_Tenure, "5")) {
             tenureDropDown.click();
@@ -64,21 +66,24 @@ public class LoanEligibilityCalculator extends BasePage {
             tenureDropDown.click();
             tenureyrs30.click();
         }
-		// if (bannerCloseButton.isDisplayed()) {
-		// 	js.executeScript(
-		// 			"document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();\r\n");
-		// }
-
+		Thread.sleep(1000);
+//		 if (bannerCloseButton.isDisplayed()) {
+		 	js.executeScript("document.querySelector(\"#compare-offers-bottom-banner > div.hl__banner__close\").click();");
+//		 }
+		
+//		js.executeScript("arguments[0].scrollIntoView(true);");
+		waitUntilWebElementIsVisible(calculateButton);
 		calculateButton.click();
-		waitUntilWebElementIsVisible(eligibleLoanAmountResult);
-//        waitUntilTextChanges(eligibleLoanAmountResult, driver);
+//		waitUntilWebElementIsVisible(eligibleLoanAmountResult);
+        waitUntilTextChanges(eligibleLoanAmountResult, driver);
 
 		st.assertEquals(eligibleLoanAmountResult.getText(), Eligible_Amount, "Eligible Loan Amount Validation");
 		st.assertAll();
 	}
 
 
-    public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
+
+	public void enterEligibilityCalculatorDataWithInvalidData(String Monthly_Income, String Ongoing_EMI, String Interest_Rate, String Loan_Tenure) {
 
         monthlyIncomeField.clear();
 		monthlyIncomeField.sendKeys(Monthly_Income);
@@ -95,17 +100,14 @@ public class LoanEligibilityCalculator extends BasePage {
 		}
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", calculateButton);
 
-        js.executeScript(
-				"document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
+        js.executeScript("document.querySelector(\"body > div > div:nth-child(4) > div.hl__calc__section > div > div.hl__calc__row > form > div.mb-form__row.pb38.has-radio > div.has-radio__flx > div:nth-child(2) > label\").click();\r\n");
 		calculateButton.click();
 
 		System.out.println(Loan_Tenure);
 
 		waitUntilWebElementIsVisible(monthlyIncomeErrorMessage);
-//		waitUntilWebElementIsVisible(interestRateErrorMessage);
 			try {
 				st.assertEquals(monthlyIncomeErrorMessage.getText(),PropertyReader.readProperty("MonthlyIncomeErrorMessage"), "Monthly Income Error Message Validaton");
-//				st.assertEquals(interestRateErrorMessage.getText(), PropertyReader.readProperty("interestRateEliCalError"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 06 17:59:28 IST 2025</td>
+<td>Started on:</td><td>Fri Nov 07 11:08:34 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48062 ms)</td>
+<tr><td>Total time:</td><td>93 seconds (93276 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,199 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000001, 0, 51, 20</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace354350463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace354350463'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
-<tr>
-<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000001, 0, -1, 20</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace487219656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace487219656'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
-<tr>
-<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 9999, 0, 51, 20</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1945915791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1945915791'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
-<tr>
-<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 99999999, 0, 1, 5, 409.50 Cr, 6.99 Cr</td>
+<td title='com.test.DummyTester.BalanceTransferTest()'><b>BalanceTransferTest</b><br>Test class: com.test.DummyTester<br>Parameters: 2000000, 12, 11, 36, 1, 8, 9, 279705, 1714163, 25071</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]
+	Saved Interest does not match expected [130137] but found [127468],
+	New EMI does not match expected [30428] but found [33038],
+	Saved Interest does not match expected [279705] but found [130137],
+	New EMI does not match expected [25071] but found [30428]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+	at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+	at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -295,13 +112,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace769342184", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace769342184'><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1504987044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504987044'><pre>java.lang.AssertionError: The following asserts failed:
+	Saved Interest does not match expected [130137] but found [127468],
+	New EMI does not match expected [30428] but found [33038],
+	Saved Interest does not match expected [279705] but found [130137],
+	New EMI does not match expected [25071] but found [30428]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+	at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+	at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -329,16 +149,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>5</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
 <td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000000, 0, 1, 5, 409.50 Cr, 7 Cr</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@350ec690 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pages.BasePage.waitUntilTextChanges(BasePage.java:36)
+	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:78)
+	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:102)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -365,13 +190,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1407675409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1407675409'><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+</pre></div><a href='#' onClick='toggleBox("stack-trace814300680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace814300680'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@350ec690 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pages.BasePage.waitUntilTextChanges(BasePage.java:36)
+	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:78)
+	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:102)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -399,12 +229,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>3</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>12</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
-<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 9999, 0, -1, 20</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
+<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000000, 0, 50, 30, 167.99 Cr, 6.99 Cr</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@1ac6dd3d (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pages.BasePage.waitUntilTextChanges(BasePage.java:36)
+	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:78)
+	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:102)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -431,9 +270,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace185488647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace185488647'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)&quot; because &quot;this.eligibilityCalculator&quot; is null
-	at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2035225037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2035225037'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@1ac6dd3d (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pages.BasePage.waitUntilTextChanges(BasePage.java:36)
+	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:78)
+	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:102)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -461,16 +309,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>12</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
-<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10001, 0, 1, 5, 4.09 Lac, 7000</td>
+<td title='com.test.DummyTester.BalanceTransferTest()'><b>BalanceTransferTest</b><br>Test class: com.test.DummyTester<br>Parameters: 3000000, 15, 9, 60, 1, 10, 8, 130137, 2402038, 30428</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]
+	Saved Interest does not match expected [130137] but found [127468],
+	New EMI does not match expected [30428] but found [33038]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+	at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+	at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -497,13 +346,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1818236857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1818236857'><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1028574311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1028574311'><pre>java.lang.AssertionError: The following asserts failed:
+	Saved Interest does not match expected [130137] but found [127468],
+	New EMI does not match expected [30428] but found [33038]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+	at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+	at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -531,16 +381,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>3</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
-<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10000, 0, 1, 5, 4.09 Lac, 7000</td>
+<td title='com.test.DummyTester.BalanceTransferTest()'><b>BalanceTransferTest</b><br>Test class: com.test.DummyTester<br>Parameters: 4000000, 20, 10, 100, 2, 15, 8, 134264, 3182662, 38601</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]
+	Saved Interest does not match expected [130137] but found [127468],
+	New EMI does not match expected [30428] but found [33038],
+	Saved Interest does not match expected [279705] but found [130137],
+	New EMI does not match expected [25071] but found [30428],
+	Saved Interest does not match expected [134264] but found [279705],
+	New EMI does not match expected [38601] but found [25071]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+	at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+	at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -567,13 +422,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace240000757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace240000757'><pre>java.lang.AssertionError: The following asserts failed:
-	Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1509860853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1509860853'><pre>java.lang.AssertionError: The following asserts failed:
+	Saved Interest does not match expected [130137] but found [127468],
+	New EMI does not match expected [30428] but found [33038],
+	Saved Interest does not match expected [279705] but found [130137],
+	New EMI does not match expected [25071] but found [30428],
+	Saved Interest does not match expected [134264] but found [279705],
+	New EMI does not match expected [38601] but found [25071]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-	at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+	at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+	at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -601,8 +461,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>4</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -613,45 +473,90 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000000, 0, 50, 30, 167.99 Cr, 6.99 Cr</td>
-<td></td>
-<td>4</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
-<tr>
-<td title='com.test.DummyTester.ValidateCalculations()'><b>ValidateCalculations</b><br>Test class: com.test.DummyTester</td>
+<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000001, 0, -1, 20</td>
 <td></td>
 <td>1</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 99999999, 0, 1, 5, 409.50 Cr, 6.99 Cr</td>
+<td></td>
+<td>4</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 9999, 0, -1, 20</td>
+<td></td>
+<td>0</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10001, 0, 50, 30, 1.68 Lac, 7000</td>
+<td></td>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
 <td title='com.test.DummyTester.ValidateErrForNoInputs()'><b>ValidateErrForNoInputs</b><br>Test class: com.test.DummyTester</td>
 <td></td>
 <td>0</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
 <td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 99999999, 0, 50, 30, 167.99 Cr, 6.99 Cr</td>
 <td></td>
 <td>4</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.BalanceTransferTest()'><b>BalanceTransferTest</b><br>Test class: com.test.DummyTester<br>Parameters: 2500000, 10, 10, 40, 1, 6, 9, 127468, 1923438, 33038</td>
+<td></td>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.ValidateCalculations()'><b>ValidateCalculations</b><br>Test class: com.test.DummyTester</td>
+<td></td>
+<td>1</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 9999, 0, 51, 20</td>
+<td></td>
+<td>1</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10001, 0, 1, 5, 4.09 Lac, 7000</td>
+<td></td>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.openLoanEligibilityPage()'><b>openLoanEligibilityPage</b><br>Test class: com.test.DummyTester</td>
+<td></td>
+<td>4</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
 <td title='com.test.DummyTester.OpenEMICalculator()'><b>OpenEMICalculator</b><br>Test class: com.test.DummyTester</td>
 <td></td>
-<td>4</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
-<tr>
-<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10001, 0, 50, 30, 1.68 Lac, 7000</td>
-<td></td>
-<td>4</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
-<tr>
-<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10000, 0, 50, 30, 1.67 Lac, 7000</td>
-<td></td>
-<td>2</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>13</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 <tr>
 <td title='com.test.DummyTester.ValidateErrorMessage()'><b>ValidateErrorMessage</b><br>Test class: com.test.DummyTester</td>
 <td></td>
 <td>0</td>
-<td>com.test.DummyTester@fbd1f6</td></tr>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10000, 0, 1, 5, 4.09 Lac, 7000</td>
+<td></td>
+<td>3</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligibilityErrTest()'><b>EligibilityErrTest</b><br>Test class: com.test.DummyTester<br>Parameters: 100000001, 0, 51, 20</td>
+<td></td>
+<td>1</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.EligiblilityCalculationTest()'><b>EligiblilityCalculationTest</b><br>Test class: com.test.DummyTester<br>Parameters: 10000, 0, 50, 30, 1.67 Lac, 7000</td>
+<td></td>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
+<tr>
+<td title='com.test.DummyTester.openBalanceTransferPage()'><b>openBalanceTransferPage</b><br>Test class: com.test.DummyTester</td>
+<td></td>
+<td>2</td>
+<td>com.test.DummyTester@1ce24091</td></tr>
 </table><p>
 </body>
 </html>

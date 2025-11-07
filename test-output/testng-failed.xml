@@ -7,16 +7,14 @@
         <methods>
           <include name="setupDriver"/>
           <include name="reportTestCreation"/>
-          <include name="EligibilityErrTest" invocation-numbers="0 1 2 3"/>
-          <include name="OpenEMICalculator"/>
-          <include name="EligiblilityCalculationTest" invocation-numbers="0 1 2 3"/>
-          <include name="ValidateCalculations"/>
-          <include name="testEnd"/>
+          <include name="openLoanEligibilityPage"/>
+          <include name="EligibilityErrTest"/>
+          <include name="EligiblilityCalculationTest" invocation-numbers="2 6"/>
+          <include name="BalanceTransferTest" invocation-numbers="1 2 3"/>
           <include name="reportCompletion"/>
-          <include name="ValidateErrorMessage"/>
           <include name="reportGeneration"/>
           <include name="reportTestCompletion"/>
-          <include name="ValidateErrForNoInputs"/>
+          <include name="openBalanceTransferPage"/>
         </methods>
       </class> <!-- com.test.DummyTester -->
     </classes>

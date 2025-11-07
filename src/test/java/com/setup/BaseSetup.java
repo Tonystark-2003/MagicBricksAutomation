@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
+
 public class BaseSetup {
 	public static WebDriver driver;
 	public static ChromeOptions coptions;
@@ -19,7 +20,9 @@ public class BaseSetup {
 		coptions.addArguments("--disable-popup-blocking");
 		coptions.addArguments("deny-permission-prompts");
 		
-		driver = new ChromeDriver(coptions);		
+		driver = new ChromeDriver(coptions);
+	
+		
 		return driver;
 	}
 	

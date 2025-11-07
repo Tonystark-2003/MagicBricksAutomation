@@ -38,6 +38,8 @@ public class EMICalculatorNavigator extends BasePage {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		js.executeScript("document.body.style.zoom = '0.5'");
+
 	}
 	
 	public void enterLoanDetails() {

@@ -49,10 +49,12 @@ public class BalanceTransfer extends BasePage{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		js.executeScript("document.body.style.zoom = '0.5'");
+
 	}
     
     public void BTCalculationTest(String Loan_Amount, String Tenure_Current, String Rate_of_Interest_Current, String Installments_Paid, String Processing_Fees, String Tenure_New, String Rate_of_Interest_New, String Saved_Interest, String Outstanding_Principal, String New_EMI
- ) {
+ ) throws InterruptedException {
     	
         loanAmountField.clear();
     	loanAmountField.sendKeys(Loan_Amount);
@@ -68,6 +70,7 @@ public class BalanceTransfer extends BasePage{
     	newTenureField.sendKeys(Tenure_New);
     	newRoIField.clear();
     	newRoIField.sendKeys(Rate_of_Interest_New);
+    	Thread.sleep(1000);
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", compareButton);
         compareButton.click();
 //        waitUntilTextChanges(savedInterest, driver);

@@ -1,381 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="8" failed="8" skipped="0">
+<testng-results ignored="0" total="22" passed="17" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-06T17:59:28 IST" name="Default suite" finished-at="2025-11-06T18:00:16 IST" duration-ms="48062">
+  <suite started-at="2025-11-07T11:08:34 IST" name="Default suite" finished-at="2025-11-07T11:10:07 IST" duration-ms="93276">
     <groups>
     </groups>
-    <test started-at="2025-11-06T17:59:28 IST" name="Default test" finished-at="2025-11-06T18:00:16 IST" duration-ms="48062">
+    <test started-at="2025-11-07T11:08:34 IST" name="Default test" finished-at="2025-11-07T11:10:07 IST" duration-ms="93276">
       <class name="com.test.DummyTester">
-        <test-method is-config="true" signature="reportGeneration()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:27 IST" name="reportGeneration" finished-at="2025-11-06T17:59:28 IST" duration-ms="366" status="PASS">
+        <test-method is-config="true" signature="reportGeneration()[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:34 IST" name="reportGeneration" finished-at="2025-11-07T11:08:34 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportGeneration -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:28 IST" name="setupDriver" finished-at="2025-11-06T17:59:31 IST" duration-ms="3146" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:34 IST" name="setupDriver" finished-at="2025-11-07T11:08:38 IST" duration-ms="3648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:32 IST" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-06T17:59:32 IST" duration-ms="15" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9999]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[-1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null
-at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EligibilityErrTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:32 IST" duration-ms="195" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EligibilityErrTest status=FAILURE method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:32 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-06T17:59:32 IST" duration-ms="1" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[100000001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[-1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null
-at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EligibilityErrTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:32 IST" duration-ms="131" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EligibilityErrTest status=FAILURE method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:32 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-06T17:59:32 IST" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9999]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[51]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null
-at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EligibilityErrTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:32 IST" duration-ms="119" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EligibilityErrTest status=FAILURE method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:32 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-06T17:59:32 IST" duration-ms="1" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[100000001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[51]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorDataWithInvalidData(String, String, String, String)" because "this.eligibilityCalculator" is null
-at com.test.DummyTester.EligibilityErrTest(DummyTester.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EligibilityErrTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:32 IST" duration-ms="138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EligibilityErrTest status=FAILURE method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCompletion -->
-        <test-method signature="OpenEMICalculator()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="OpenEMICalculator" finished-at="2025-11-06T17:59:37 IST" duration-ms="4226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenEMICalculator -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:32 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:32 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:38 IST" name="reportTestCreation" finished-at="2025-11-07T11:08:38 IST" duration-ms="38" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -384,25 +24,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:37 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:37 IST" duration-ms="227" status="PASS">
+        <test-method signature="OpenEMICalculator()[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:38 IST" name="OpenEMICalculator" finished-at="2025-11-07T11:08:51 IST" duration-ms="13743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenEMICalculator -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:51 IST" name="reportTestCompletion" finished-at="2025-11-07T11:08:52 IST" duration-ms="381" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OpenEMICalculator status=SUCCESS method=DummyTester.OpenEMICalculator()[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=OpenEMICalculator status=SUCCESS method=DummyTester.OpenEMICalculator()[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:37 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:52 IST" name="reportTestCreation" finished-at="2025-11-07T11:08:52 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -411,29 +55,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="ValidateCalculations()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:37 IST" name="ValidateCalculations" finished-at="2025-11-06T17:59:38 IST" depends-on-methods="com.test.DummyTester.OpenEMICalculator" duration-ms="1076" status="PASS">
+        <test-method signature="ValidateCalculations()[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:52 IST" name="ValidateCalculations" finished-at="2025-11-07T11:08:54 IST" depends-on-methods="com.test.DummyTester.OpenEMICalculator" duration-ms="1801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCalculations -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:38 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:38 IST" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:54 IST" name="reportTestCompletion" finished-at="2025-11-07T11:08:54 IST" duration-ms="244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidateCalculations status=SUCCESS method=DummyTester.ValidateCalculations()[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=ValidateCalculations status=SUCCESS method=DummyTester.ValidateCalculations()[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:38 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:54 IST" name="reportTestCreation" finished-at="2025-11-07T11:08:54 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -442,29 +86,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="ValidateErrorMessage()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:38 IST" name="ValidateErrorMessage" finished-at="2025-11-06T17:59:39 IST" depends-on-methods="com.test.DummyTester.ValidateCalculations, com.test.DummyTester.OpenEMICalculator" duration-ms="649" status="PASS">
+        <test-method signature="ValidateErrorMessage()[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:54 IST" name="ValidateErrorMessage" finished-at="2025-11-07T11:08:55 IST" depends-on-methods="com.test.DummyTester.ValidateCalculations, com.test.DummyTester.OpenEMICalculator" duration-ms="827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateErrorMessage -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:39 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:39 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:55 IST" name="reportTestCompletion" finished-at="2025-11-07T11:08:55 IST" duration-ms="262" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidateErrorMessage status=SUCCESS method=DummyTester.ValidateErrorMessage()[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=ValidateErrorMessage status=SUCCESS method=DummyTester.ValidateErrorMessage()[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:39 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:55 IST" name="reportTestCreation" finished-at="2025-11-07T11:08:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -473,45 +117,60 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="ValidateErrForNoInputs()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:39 IST" name="ValidateErrForNoInputs" finished-at="2025-11-06T17:59:39 IST" depends-on-methods="com.test.DummyTester.ValidateCalculations, com.test.DummyTester.ValidateErrorMessage, com.test.DummyTester.OpenEMICalculator" duration-ms="376" status="PASS">
+        <test-method signature="ValidateErrForNoInputs()[pri:1, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:55 IST" name="ValidateErrForNoInputs" finished-at="2025-11-07T11:08:56 IST" depends-on-methods="com.test.DummyTester.ValidateCalculations, com.test.DummyTester.ValidateErrorMessage, com.test.DummyTester.OpenEMICalculator" duration-ms="625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateErrForNoInputs -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:39 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:40 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:56 IST" name="reportTestCompletion" finished-at="2025-11-07T11:08:56 IST" duration-ms="272" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidateErrForNoInputs status=SUCCESS method=DummyTester.ValidateErrForNoInputs()[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=ValidateErrForNoInputs status=SUCCESS method=DummyTester.ValidateErrForNoInputs()[pri:1, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:40 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:56 IST" name="reportTestCreation" finished-at="2025-11-07T11:08:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+                <![CDATA[public void com.test.DummyTester.openLoanEligibilityPage()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:40 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T17:59:44 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="4429" status="FAIL">
+        <test-method signature="openLoanEligibilityPage()[pri:2, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:08:56 IST" name="openLoanEligibilityPage" finished-at="2025-11-07T11:09:00 IST" duration-ms="4420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoanEligibilityPage -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:00 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:01 IST" duration-ms="320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openLoanEligibilityPage status=SUCCESS method=DummyTester.openLoanEligibilityPage()[pri:2, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:02 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:06 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="3772" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -544,182 +203,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:44 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:44 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:02 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:02 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=FAILURE method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:44 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:44 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:44 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T17:59:48 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="3983" status="FAIL">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:06 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:06 IST" duration-ms="248" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[10001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[4.09 Lac]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[7000]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Eligible Loan Amount Validation expected [4.09 Lac] but found [21.76 Lac]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:48 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:49 IST" duration-ms="216" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=FAILURE method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:49 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:49 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:49 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T17:59:54 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="5150" status="FAIL">
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:06 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:10 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="4209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -752,78 +266,53 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:54 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:54 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:06 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=FAILURE method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:54 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:54 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:54 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T17:59:57 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="3457" status="FAIL">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:10 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:10 IST" duration-ms="204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:10 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:10 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:23 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="12428" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -856,18 +345,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[The following asserts failed:
-Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]]]>
+              <![CDATA[Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@350ec690 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Eligible Loan Amount Validation expected [409.50 Cr] but found [2176.34 Cr]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:77)
-at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:62)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@350ec690 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.pages.BasePage.waitUntilTextChanges(BasePage.java:36)
+at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:78)
+at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:102)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -896,38 +394,38 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:57 IST" name="reportTestCompletion" finished-at="2025-11-06T17:59:58 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:23 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:23 IST" duration-ms="201" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=FAILURE method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=FAILURE method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:58 IST" name="reportTestCreation" finished-at="2025-11-06T17:59:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:23 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T17:59:58 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T18:00:00 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="2875" status="PASS">
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:23 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:26 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="2824" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -963,34 +461,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:00 IST" name="reportTestCompletion" finished-at="2025-11-06T18:00:01 IST" duration-ms="224" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:26 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:26 IST" duration-ms="228" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:01 IST" name="reportTestCreation" finished-at="2025-11-06T18:00:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:26 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:01 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T18:00:05 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="4137" status="PASS">
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:26 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:29 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="2793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1026,34 +524,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:05 IST" name="reportTestCompletion" finished-at="2025-11-06T18:00:05 IST" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:29 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:29 IST" duration-ms="211" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:05 IST" name="reportTestCreation" finished-at="2025-11-06T18:00:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:05 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T18:00:10 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="4565" status="PASS">
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:29 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:33 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="4092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1089,34 +571,50 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:10 IST" name="reportTestCompletion" finished-at="2025-11-06T18:00:10 IST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:29 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:10 IST" name="reportTestCreation" finished-at="2025-11-06T18:00:10 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@586cc15d]]>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCreation -->
-        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:10 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-06T18:00:15 IST" depends-on-methods="com.test.DummyTester.ValidateErrForNoInputs" duration-ms="4922" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:33 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:33 IST" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:33 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:33 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:46 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="12318" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1149,25 +647,850 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@1ac6dd3d (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.pages.BasePage$$Lambda/0x0000028b343bb328@1ac6dd3d (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.59, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\sanilped\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65070}, goog:processID: 30236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65070/devtoo..., se:cdpVersion: 142.0.7444.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52c6d51b7b0ce9c92cf62ce1f6dc3aa0
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.pages.BasePage.waitUntilTextChanges(BasePage.java:36)
+at com.pages.LoanEligibilityCalculator.enterEligibilityCalculatorData(LoanEligibilityCalculator.java:78)
+at com.test.DummyTester.EligiblilityCalculationTest(DummyTester.java:102)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EligiblilityCalculationTest -->
-        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:15 IST" name="reportTestCompletion" finished-at="2025-11-06T18:00:15 IST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:46 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:46 IST" duration-ms="222" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@fbd1f6] output={null}]]]>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=FAILURE method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestCompletion -->
-        <test-method is-config="true" signature="testEnd()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:15 IST" name="testEnd" finished-at="2025-11-06T18:00:16 IST" duration-ms="605" status="PASS">
+        <test-method signature="EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:46 IST" name="EligiblilityCalculationTest" data-provider="LoanEligibiltyDataPositive" finished-at="2025-11-07T11:09:49 IST" depends-on-methods="com.test.DummyTester.openLoanEligibilityPage" duration-ms="2824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4.09 Lac]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7000]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnd -->
-        <test-method is-config="true" signature="reportCompletion()[pri:0, instance:com.test.DummyTester@fbd1f6]" started-at="2025-11-06T18:00:16 IST" name="reportCompletion" finished-at="2025-11-06T18:00:17 IST" duration-ms="742" status="PASS">
+        </test-method> <!-- EligiblilityCalculationTest -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:46 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:49 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:49 IST" duration-ms="221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EligiblilityCalculationTest status=SUCCESS method=DummyTester.EligiblilityCalculationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:49 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:49 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:49 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-07T11:09:50 IST" duration-ms="972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EligibilityErrTest -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:50 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:51 IST" duration-ms="650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EligibilityErrTest status=SUCCESS method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:51 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-07T11:09:52 IST" duration-ms="1058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100000001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EligibilityErrTest -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:51 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:52 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:52 IST" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EligibilityErrTest status=SUCCESS method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:52 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-07T11:09:53 IST" duration-ms="1046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[51]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EligibilityErrTest -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:52 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:53 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:53 IST" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EligibilityErrTest status=SUCCESS method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method signature="EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:53 IST" name="EligibilityErrTest" data-provider="LoanEligibiltyDataNegative" finished-at="2025-11-07T11:09:54 IST" duration-ms="1068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100000001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[51]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EligibilityErrTest -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:53 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:54 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:54 IST" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EligibilityErrTest status=SUCCESS method=DummyTester.EligibilityErrTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method signature="openBalanceTransferPage()[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:55 IST" name="openBalanceTransferPage" finished-at="2025-11-07T11:09:57 IST" depends-on-methods="com.test.DummyTester.EligibilityErrTest" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBalanceTransferPage -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:55 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:55 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.openBalanceTransferPage()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:57 IST" name="reportTestCompletion" finished-at="2025-11-07T11:09:57 IST" duration-ms="294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openBalanceTransferPage status=SUCCESS method=DummyTester.openBalanceTransferPage()[pri:0, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:57 IST" name="reportTestCreation" finished-at="2025-11-07T11:09:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method signature="BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:09:57 IST" name="BalanceTransferTest" data-provider="BalTransferPositiveData" finished-at="2025-11-07T11:10:00 IST" depends-on-methods="com.test.DummyTester.openBalanceTransferPage" duration-ms="2419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[127468]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1923438]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[33038]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BalanceTransferTest -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:00 IST" name="reportTestCompletion" finished-at="2025-11-07T11:10:00 IST" duration-ms="201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BalanceTransferTest status=SUCCESS method=DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:00 IST" name="reportTestCreation" finished-at="2025-11-07T11:10:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method signature="BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:00 IST" name="BalanceTransferTest" data-provider="BalTransferPositiveData" finished-at="2025-11-07T11:10:02 IST" depends-on-methods="com.test.DummyTester.openBalanceTransferPage" duration-ms="2196" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[130137]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2402038]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[30428]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Saved Interest does not match expected [130137] but found [127468],
+New EMI does not match expected [30428] but found [33038]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Saved Interest does not match expected [130137] but found [127468],
+New EMI does not match expected [30428] but found [33038]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BalanceTransferTest -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:02 IST" name="reportTestCompletion" finished-at="2025-11-07T11:10:02 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BalanceTransferTest status=FAILURE method=DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method signature="BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:02 IST" name="BalanceTransferTest" data-provider="BalTransferPositiveData" finished-at="2025-11-07T11:10:05 IST" depends-on-methods="com.test.DummyTester.openBalanceTransferPage" duration-ms="2284" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[36]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[279705]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1714163]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[25071]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Saved Interest does not match expected [130137] but found [127468],
+New EMI does not match expected [30428] but found [33038],
+Saved Interest does not match expected [279705] but found [130137],
+New EMI does not match expected [25071] but found [30428]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Saved Interest does not match expected [130137] but found [127468],
+New EMI does not match expected [30428] but found [33038],
+Saved Interest does not match expected [279705] but found [130137],
+New EMI does not match expected [25071] but found [30428]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BalanceTransferTest -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:02 IST" name="reportTestCreation" finished-at="2025-11-07T11:10:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:05 IST" name="reportTestCompletion" finished-at="2025-11-07T11:10:05 IST" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BalanceTransferTest status=FAILURE method=DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method signature="BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:05 IST" name="BalanceTransferTest" data-provider="BalTransferPositiveData" finished-at="2025-11-07T11:10:07 IST" depends-on-methods="com.test.DummyTester.openBalanceTransferPage" duration-ms="2173" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[134264]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3182662]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[38601]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Saved Interest does not match expected [130137] but found [127468],
+New EMI does not match expected [30428] but found [33038],
+Saved Interest does not match expected [279705] but found [130137],
+New EMI does not match expected [25071] but found [30428],
+Saved Interest does not match expected [134264] but found [279705],
+New EMI does not match expected [38601] but found [25071]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Saved Interest does not match expected [130137] but found [127468],
+New EMI does not match expected [30428] but found [33038],
+Saved Interest does not match expected [279705] but found [130137],
+New EMI does not match expected [25071] but found [30428],
+Saved Interest does not match expected [134264] but found [279705],
+New EMI does not match expected [38601] but found [25071]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.pages.BalanceTransfer.BTCalculationTest(BalanceTransfer.java:79)
+at com.test.DummyTester.BalanceTransferTest(DummyTester.java:137)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BalanceTransferTest -->
+        <test-method is-config="true" signature="reportTestCreation(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:05 IST" name="reportTestCreation" finished-at="2025-11-07T11:10:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCreation -->
+        <test-method is-config="true" signature="reportTestCompletion(org.testng.ITestResult)[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:07 IST" name="reportTestCompletion" finished-at="2025-11-07T11:10:07 IST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BalanceTransferTest status=FAILURE method=DummyTester.BalanceTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.test.DummyTester@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestCompletion -->
+        <test-method is-config="true" signature="reportCompletion()[pri:0, instance:com.test.DummyTester@1ce24091]" started-at="2025-11-07T11:10:07 IST" name="reportCompletion" finished-at="2025-11-07T11:10:08 IST" duration-ms="705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportCompletion -->
